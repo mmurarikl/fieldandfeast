@@ -1,0 +1,310 @@
+/* CSS BY MEQUILA MURARIK */
+:root{    
+/* IMPORTED FONTS */    
+    --fonts: 'Playfair Display', serif;
+/* ROOT VARIABLES */
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+}
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* GLOBAL STYLES (mobile first/small) */
+body{
+    font-family: var(--fonts);
+    background-color: var(--soft-white);
+    margin: auto;
+    width: 100%;
+}
+header{
+    background-color: var(--midnight-blue);
+    line-height: 1;
+    text-align: center;
+    color: var(--linen);
+}
+header img{
+    width: 200px;
+    height: auto;
+    padding-bottom: 16px;
+}
+header h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 24px;
+}
+header p{
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 24px;
+}
+nav{
+    background-color: var(--champagne-gold);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--midnight-blue);
+    font-size: 1.25rem;
+}
+nav li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+main{
+    background-color: var(--soft-white);
+    padding-top: 36px;
+}
+h2{
+    font-size: 1.75rem;
+    color: var(--midnight-blue);
+    padding-bottom: 8px;
+}
+#about{
+    padding: 8px 16px 24px 16px;
+    border-bottom: 3px solid #E5C185;
+}
+section p{
+    line-height: 1.3;
+    font-size: 1rem;
+    color: var(--dark-charcoal);
+}
+#offerings h2, #gallery h2{
+    padding-left: 16px;
+    padding-top: 24px;
+}
+#provisions, #experiences, #basket{
+    background-color: var(--olive-green);
+    padding: 24px 16px 16px 16px;
+    margin: 16px;
+    border-radius: 8px;
+    color: var(--soft-white);
+    filter: drop-shadow(0 3px 3px grey);
+}
+#provisions h3, #experiences h3, #basket h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+#provisions p, #experiences p, #basket p{
+    color: var(--soft-white);
+}
+#basket ul{
+    list-style-type: disc;
+    padding-left: 16px;
+    line-height: 1.3;
+}
+#offerings{
+    border-bottom: 3px solid #E5C185;
+    padding-bottom: 8px;
+}
+#gallery p:first-of-type{
+    padding-left: 16px;
+}
+#gallery h2 + p{
+    margin-bottom: 16px;
+}
+.polaroid {
+    background: var(--soft-white);
+    border-radius: 8px;
+    box-shadow: 0 3px 12px grey;  
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.polaroid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.polaroid p {
+    font-style: italic;
+    color: #333;
+    font-size: 0.95rem;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;   
+    overflow-wrap: break-word;
+    white-space: normal;
+    box-sizing: border-box;
+}
+#gallery a{
+    text-decoration: none;
+    color: var(--soft-white);
+    font-weight: bold;
+}
+#gallery > p:last-of-type{
+    background-color: var(--olive-green);
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 8px 0;
+}
+#gallery{
+    border-bottom: 3px solid #E5C185;
+    padding: 0 16px 24px 26px;
+}
+footer{
+    margin-top: 24px;
+    background-color: var(--midnight-blue);
+    width: 100%;
+    color: var(--soft-white);
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+footer p{
+    line-height: 1.3;
+}
+footer a{
+    text-decoration: none;
+    color: var(--champagne-gold);
+    font-weight: bold;
+}
+#social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+/* MEDIA QUERY (medium) */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    #offerings{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #offerings h2{
+        grid-column: 1/3;
+    }
+    #basket{
+        grid-column: 1/3;
+    }
+    #gallery{
+        display: grid;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #gallery h2, h2 + p{
+        grid-column: 1/3;
+    }
+    #gallery p:last-of-type {
+        grid-column: 1 / 3; 
+        text-align: center; 
+        width: 100%;
+    }
+}
+/* MEDIA QUERY (large) */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #offerings{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #offerings h2{
+        grid-column: 1/3;
+    }
+    #basket{
+        grid-column: 1/3;
+    }
+    #gallery{
+        display: grid;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #gallery h2, h2 + p{
+        grid-column: 1/4;
+    }
+    #gallery p:last-of-type {
+        grid-column: 1/4; 
+        text-align: center; 
+    }
+}
+/* MEDIA QUERY (xlarge) */
+@media screen and (min-width: 1025px){
+    main{
+        max-width: 1025px;
+        margin: auto;
+    }
+    nav ul{
+        justify-content: space-around;
+    }
+    #offerings{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #offerings h2{
+        grid-column: 1/3;
+    }
+    #basket{
+        grid-column: 1/3;
+    }
+    #gallery{
+        display: grid;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #gallery h2, h2 + p{
+        grid-column: 1/6;
+    }
+    #gallery p:last-of-type {
+        grid-column: 1/6; 
+        text-align: center; 
+        width: 100%;
+    }
+}
